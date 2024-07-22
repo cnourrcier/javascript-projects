@@ -93,7 +93,7 @@ main p {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 0.5rem;
+    gap: 0.8rem;
 }
 
 .main-menu__item {
