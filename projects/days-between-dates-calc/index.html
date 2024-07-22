@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Days Between Dates Calculator</title>
+</head>
+
+<body>
+    <a href="../../index.html">Home</a>
+    <div class="container">
+        <h1>Days Between Dates Calculator</h1>
+        <form id="dateForm">
+            <label for="date1">Start Date:</label>
+            <input type="date" id="date1" required>
+            <br>
+            <label for="date2">End Date:</label>
+            <input type="date" id="date2" required>
+            <br>
+            <div class="checkbox-container">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Include last day in calculation?</label>
+            </div>
+            <button type="button" onclick="calculateDays()">Calculate Days</button>
+        </form>
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

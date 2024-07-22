@@ -31,23 +31,19 @@
 
         <main class="content-area" id="content-area">
             <h2>Welcome!</h2>
-
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facere quo repellat sed iste earum
-                expedita numquam autem ab eius provident ipsum quidem hic fugiat quis quos beatae mollitia est.
-            </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facere quo repellat sed iste earum
-                expedita numquam autem ab eius provident ipsum quidem hic fugiat quis quos beatae mollitia est.
-            </p>
+            <div id="text-container">
+                <div id="text"></div>
+                <div id="cursor"></div>
+            </div>
+            <p id="quote"></p>
         </main>
 
         <aside class="sidebar">
             <h3>Highlighted Favorites</h3>
 
             <ul>
-                <li><a href="./mini-projects/project1/index.html">Project 1</a></li>
-                <li>Project 2</li>
+                <li><a href="./projects/days-between-dates-calc/index.html">Dates Between Calculator</a></li>
+                <li><a href="./projects/countdown-timer/index.html">Countdown Timer</a></li>
                 <li>Listed</li>
                 <li>Here</li>
                 <li>Wow!</li>
@@ -58,19 +54,24 @@
             <h2>Projects</h2>
 
             <section class="projects">
-                <figure class="project">
-                    <img src="https://via.placeholder.com/220x170">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, repellat tenetur? Cum minima
-                        dolores beatae magnam dolorem officiis pariatur, ad aspernatur recusandae suscipit, iste
-                        deserunt labore odio in cupiditate eveniet.</p>
-                </figure>
+                <a href="./projects/days-between-dates-calc/index.html">
+                    <figure class="project">
+                        <img src="./assets/img/days-btwn-calc-js.png">
+                        <p>Calculate the number of days between two chosen dates. You can also choose to include the
+                            last
+                            day in your calculation.</p>
+                    </figure>
+                </a>
 
-                <figure class="project">
-                    <img src="https://via.placeholder.com/220x170">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, repellat tenetur? Cum minima
-                        dolores beatae magnam dolorem officiis pariatur, ad aspernatur recusandae suscipit, iste
-                        deserunt labore odio in cupiditate eveniet.</p>
-                </figure>
+                <a href="./projects/countdown-timer/index.html">
+                    <figure class="project">
+                        <img src="./assets/img/countdown-timer-js.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, repellat tenetur? Cum
+                            minima
+                            dolores beatae magnam dolorem officiis pariatur, ad aspernatur recusandae suscipit, iste
+                            deserunt labore odio in cupiditate eveniet.</p>
+                    </figure>
+                </a>
 
                 <figure class="project">
                     <img src="https://via.placeholder.com/220x170">
@@ -98,7 +99,7 @@
 
         <footer class="footer">
             <p>
-                &copy; 2024 DemoSite. White&amp;Sons LLC. All rights reserved.
+                &copy; 2024 Charlie Nourrcier. All rights reserved.
             </p>
             <ul class="social-links">
                 <li><a class="linkedin" href="https://www.linkedin.com/in/charlienourrcier/" target="_blank"><i
@@ -108,7 +109,7 @@
             </ul>
         </footer>
     </div>
-    <script href="script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
