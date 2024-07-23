@@ -3,7 +3,10 @@ let convertBtn = document.getElementById('convert-btn');
 let result = document.getElementById('result');
 
 function convertToRomanNumeral(input) {
-    console.log(input);
+    if (!input) {
+        return `<p>Please enter a valid number</p>`;
+    }
+
     const romanNumerals = [
         { value: 1000, numeral: 'M' },
         { value: 900, numeral: 'CM' },
@@ -21,6 +24,14 @@ function convertToRomanNumeral(input) {
     ]
     let number = parseInt(input);
     let romanNumeral = '';
+
+    if (number <= 0) {
+        return `<p>Please enter a number greater than or equal to 1</p>`;
+    }
+
+    if (number > 3999) {
+        return `<p>Please enter a number less than or equal to 3999</p>`;
+    }
 
     romanNumerals.forEach(({ value, numeral }) => {
         while (number >= value) {
