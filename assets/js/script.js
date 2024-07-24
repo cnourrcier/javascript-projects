@@ -1,11 +1,30 @@
 
+const toggleMicroservicesBtn = document.getElementById('toggle-microservices-btn');
+const toggleGamesBtn = document.getElementById('toggle-games-btn');
+const toggleApiProjectsBtn = document.getElementById('toggle-api-projects-btn');
+
+const microservices = document.getElementById('microservices');
+const games = document.getElementById('games');
+const apiProjects = document.getElementById('api-projects');
+
+const toggleSection = (section) => {
+    if (section.style.display === 'none' || section.style.display === '') {
+        section.style.display = 'grid';
+    } else {
+        section.style.display = 'none';
+    }
+}
+
+toggleMicroservicesBtn.addEventListener('click', () => toggleSection(microservices));
+toggleGamesBtn.addEventListener('click', () => toggleSection(games));
+toggleApiProjectsBtn.addEventListener('click', () => toggleSection(apiProjects));
+
 // Fetch quotes from the API
 fetch("https://type.fit/api/quotes")
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
-        console.log(data);
         // Fill _CONTENT with quotes from the API
         _CONTENT = data.map(quote =>
             `${quote.text}
@@ -63,3 +82,4 @@ function Delete() {
         }, 200);
     }
 }
+

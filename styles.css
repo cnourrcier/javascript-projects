@@ -130,6 +130,10 @@ main p {
     width: 100%;
 }
 
+.project-section-header {
+    cursor: pointer;
+}
+
 .project {
     margin-left: 0;
     margin-right: 0;
@@ -148,6 +152,12 @@ main p {
 .project img {
     width: 220px;
     height: 170px;
+}
+
+#microservices,
+#games,
+#api-projects {
+    display: none;
 }
 
 .footer {
