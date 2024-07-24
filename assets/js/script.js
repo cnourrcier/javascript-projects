@@ -1,23 +1,42 @@
 
-const toggleMicroservicesBtn = document.getElementById('toggle-microservices-btn');
-const toggleGamesBtn = document.getElementById('toggle-games-btn');
-const toggleApiProjectsBtn = document.getElementById('toggle-api-projects-btn');
+const toggleMicroservicesHeader = document.getElementById('toggle-microservices');
+const toggleGamesHeader = document.getElementById('toggle-games');
+const toggleApiProjectsHeader = document.getElementById('toggle-api-projects');
+
+const toggleMicroservicesLink = document.getElementById('nav-and-toggle-microservices');
+const toggleGamesLink = document.getElementById('nav-and-toggle-games');
+const toggleApiProjectsLink = document.getElementById('nav-and-toggle-api-projects');
 
 const microservices = document.getElementById('microservices');
 const games = document.getElementById('games');
 const apiProjects = document.getElementById('api-projects');
 
-const toggleSection = (section) => {
+const projectSections = [microservices, games, apiProjects];
+
+const toggleSection = (section, header) => {
+    const icon = header.querySelector('i');
     if (section.style.display === 'none' || section.style.display === '') {
+        hideAllSections();
+        icon.classList.add('up');
         section.style.display = 'grid';
     } else {
         section.style.display = 'none';
+        icon.classList.remove('up');
     }
 }
 
-toggleMicroservicesBtn.addEventListener('click', () => toggleSection(microservices));
-toggleGamesBtn.addEventListener('click', () => toggleSection(games));
-toggleApiProjectsBtn.addEventListener('click', () => toggleSection(apiProjects));
+const hideAllSections = () => {
+    projectSections.map(section => section.style.display = 'none');
+}
+
+toggleMicroservicesHeader.addEventListener('click', () => toggleSection(microservices, toggleMicroservicesHeader));
+toggleGamesHeader.addEventListener('click', () => toggleSection(games, toggleGamesHeader));
+toggleApiProjectsHeader.addEventListener('click', () => toggleSection(apiProjects, toggleApiProjectsHeader));
+
+toggleMicroservicesLink.addEventListener('click', () => toggleSection(microservices, toggleMicroservicesHeader));
+toggleGamesLink.addEventListener('click', () => toggleSection(games, toggleGamesHeader));
+toggleApiProjectsLink.addEventListener('click', () => toggleSection(apiProjects, toggleApiProjectsHeader));
+
 
 // Fetch quotes from the API
 fetch("https://type.fit/api/quotes")

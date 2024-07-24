@@ -30,7 +30,7 @@ main p {
     margin-bottom: 0;
 }
 
-#text {
+/* #text {
     display: inline-block;
     vertical-align: middle;
     color: orange;
@@ -61,7 +61,7 @@ main p {
     50% {
         background-color: orange;
     }
-}
+} */
 
 .container {
     display: grid;
@@ -121,6 +121,13 @@ main p {
     align-items: center;
 }
 
+.projects-header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
 .projects {
     display: grid;
     grid-template-columns: 1fr;
@@ -130,8 +137,23 @@ main p {
     width: 100%;
 }
 
-.project-section-header {
+.projects-section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.projects-section-header i {
+    transition: transform 0.3s;
+}
+
+.projects-section-header i.up {
+    transform: rotate(180deg);
+}
+
+.projects-section-header:hover {
     cursor: pointer;
+    color: blue;
 }
 
 .project {
