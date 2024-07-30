@@ -1,6 +1,7 @@
 :root {
     --secondary-bg: hsl(130, 62%, 91%);
-    --primary-bg: hsl(193, 100%, 5%);
+    --heading: hsl(129, 100%, 96%);
+    --primary-bg: hsl(194, 100%, 35%);
     --primary-accent: hsl(199, 69%, 17%);
     --secondary-accent: hsl(244, 100%, 44%);
     --highlight: hsl(244, 100%, 44%);
@@ -26,16 +27,17 @@ main {
 }
 
 h1 {
-    color: var(--secondary-bg);
+    color: var(--heading);
     margin: 20px 0 40px 0;
 }
 
 .todo-app {
     background-color: var(--secondary-bg);
-    border: 3px solid hsl(129, 80%, 58%);
+    box-shadow: 0px 2px 1px 0px hsl(129, 80%, 58%);
     width: 300px;
     height: 350px;
     border-radius: 8px;
+    border-top: 3px solid var(--heading);
     padding: 15px;
     position: relative;
     display: flex;
@@ -48,7 +50,7 @@ h1 {
     width: 100px;
     padding: 5px;
     margin: 10px;
-    color: #000;
+    color: #194d2e;
     background-color: var(--secondary-accent);
     background-image: linear-gradient(hsl(105, 100%, 81%), hsl(129, 80%, 58%));
     border: none;
@@ -161,6 +163,7 @@ h1 {
     padding: 5px;
     background-color: #fff;
     border-radius: 5px;
+    box-shadow: 0px 1px 2px 0px var(--primary-bg);
 }
 
 .hidden {
