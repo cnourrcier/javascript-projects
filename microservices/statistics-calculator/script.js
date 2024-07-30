@@ -1,6 +1,7 @@
 const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
 
 const getMedian = (array) => {
+    // The slice method creates a shallow copy of array so you don't mutate the original array.
     const sorted = array.slice().sort((a, b) => a - b);
     const median =
         sorted.length % 2 === 0
@@ -18,12 +19,15 @@ const getMode = (array) => {
             counts[el] = 1;
         }
     })
-    if (new Set(Object.values(counts)).size === 1) {
-        return null;
-    }
 
-    const highest = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0];
-    const mode = Object.keys(counts).filter(el => counts[el] === counts[highest]);
+    const frequencies = Object.values(counts);
+    const maxFrequency = Math.max(...frequencies);
+
+    if (frequencies.filter(freq => freq === maxFrequency).length === frequencies.length) {
+        return "No mode";
+    };
+
+    const mode = Object.keys(counts).filter(el => counts[el] === maxFrequency);
     return mode.join(', ');
 };
 
@@ -60,10 +64,10 @@ const calculate = () => {
     const variance = getVariance(numbers);
     const standardDeviation = getStandardDeviation(numbers);
 
-    document.getElementById('mean').textContent = mean;
-    document.getElementById('median').textContent = median;
-    document.getElementById('mode').textContent = mode;
-    document.getElementById('range').textContent = range;
-    document.getElementById('variance').textContent = variance;
-    document.getElementById('standardDeviation').textContent = standardDeviation;
+    document.querySelector('#mean').textContent = mean;
+    document.querySelector('#median').textContent = median;
+    document.querySelector('#mode').textContent = mode;
+    document.querySelector('#range').textContent = range;
+    document.querySelector('#variance').textContent = variance;
+    document.querySelector('#standardDeviation').textContent = standardDeviation;
 };
