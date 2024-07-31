@@ -31,3 +31,6 @@
 [submodule "games/snake"]
 	path = games/snake
 	url = https://github.com/cnourrcier/snake.git
+[submodule "microservices/countdown-timer"]
+	path = microservices/countdown-timer
+	url = https://github.com/cnourrcier/countdown-timer.git
