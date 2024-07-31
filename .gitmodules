@@ -19,3 +19,15 @@
 [submodule "microservices/palindrome-checker"]
 	path = microservices/palindrome-checker
 	url = https://github.com/cnourrcier/palindrome-checker.git
+[submodule "microservices/spreadsheet"]
+	path = microservices/spreadsheet
+	url = https://github.com/cnourrcier/spreadsheet.git
+[submodule "games/rock-paper-scissors"]
+	path = games/rock-paper-scissors
+	url = https://github.com/cnourrcier/rock-paper-scissors.git
+[submodule "games/rpg-dragon-repeller"]
+	path = games/rpg-dragon-repeller
+	url = https://github.com/cnourrcier/rpg-dragon-repeller.git
+[submodule "games/snake"]
+	path = games/snake
+	url = https://github.com/cnourrcier/snake.git
