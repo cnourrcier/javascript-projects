@@ -34,3 +34,6 @@
 [submodule "microservices/countdown-timer"]
 	path = microservices/countdown-timer
 	url = https://github.com/cnourrcier/countdown-timer.git
+[submodule "microservices/days-between-dates-calc"]
+	path = microservices/days-between-dates-calc
+	url = https://github.com/cnourrcier/days-between-dates-calc.git
