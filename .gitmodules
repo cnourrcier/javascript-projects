@@ -1,0 +1,21 @@
+[submodule "microservices/phone-number-validator"]
+	path = microservices/phone-number-validator
+	url = https://github.com/cnourrcier/phone-number-validator.git
+[submodule "microservices/statistics-calculator"]
+	path = microservices/statistics-calculator
+	url = https://github.com/cnourrcier/statistics-calculator.git
+[submodule "microservices/roman-numeral-converter"]
+	path = microservices/roman-numeral-converter
+	url = https://github.com/cnourrcier/roman-numeral-converter.git
+[submodule "microservices/decimal-to-binary-converter"]
+	path = microservices/decimal-to-binary-converter
+	url = https://github.com/cnourrcier/decimal-to-binary-converter.git
+[submodule "microservices/todo-app"]
+	path = microservices/todo-app
+	url = https://github.com/cnourrcier/todo-app.git
+[submodule "microservices/date-formatter"]
+	path = microservices/date-formatter
+	url = https://github.com/cnourrcier/date-formatter.git
+[submodule "microservices/palindrome-checker"]
+	path = microservices/palindrome-checker
+	url = https://github.com/cnourrcier/palindrome-checker.git
