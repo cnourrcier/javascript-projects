@@ -40,3 +40,6 @@
 [submodule "microservices/cash-register"]
 	path = microservices/cash-register
 	url = https://github.com/cnourrcier/cash-register.git
+[submodule "games/platformer-game"]
+	path = games/platformer-game
+	url = https://github.com/cnourrcier/platformer-game.git
