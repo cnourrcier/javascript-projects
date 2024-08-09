@@ -37,3 +37,6 @@
 [submodule "microservices/days-between-dates-calc"]
 	path = microservices/days-between-dates-calc
 	url = https://github.com/cnourrcier/days-between-dates-calc.git
+[submodule "microservices/cash-register"]
+	path = microservices/cash-register
+	url = https://github.com/cnourrcier/cash-register.git
