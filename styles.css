@@ -28,12 +28,17 @@ html {
 }
 
 body {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    background: linear-gradient(to left, hsl(0, 65%, 83%), hsl(225, 83%, 84%));
     color: var(--text-color);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     transition: background-color 0.3s;
+}
+
+ul {
+    list-style-type: none;
 }
 
 h1,
@@ -71,7 +76,7 @@ main p {
 
 .container {
     display: grid;
-    margin: 0 4rem 2rem 4rem;
+    margin: 0.5rem 4rem 2rem 4rem;
     grid-template-columns: 3fr 5fr 4fr;
     grid-template-rows: 3rem;
     grid-gap: 2rem 1rem;
@@ -82,17 +87,21 @@ main p {
     flex: 1;
 }
 
+.container,
+.footer {
+    position: relative;
+    z-index: 1;
+}
+
 .logo {
     grid-area: logo;
     align-self: center;
-    /* border: 1px solid black; */
 }
 
 .main-menu {
     grid-area: menu;
     align-self: center;
     justify-self: end;
-    /* border: 1px solid black; */
 }
 
 .main-menu ul {
@@ -118,18 +127,24 @@ main p {
 
 .content-area {
     grid-area: content;
-    /* border: 1px solid black; */
     animation: fadeInUp 1s ease-in-out;
 }
 
 .sidebar {
     grid-area: sidebar;
     padding: 1rem;
-    background-color: var(--sidebar-bg-color);
+    /* background-color: var(--sidebar-bg-color); */
+    background: inherit;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* border: 1px solid black; */
 }
+
+/* .sidebar::before {
+    content: '';
+    background: inherit;
+    box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
+    filter: blur(10px);
+} */
 
 .projects-wrapper {
     grid-area: projects;
@@ -146,7 +161,6 @@ main p {
     justify-content: space-between;
     border-bottom: 2px solid #eaeaea;
     margin-bottom: 2rem;
-    /* border: 1px solid black; */
 }
 
 .projects {

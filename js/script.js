@@ -5,11 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const sectionsContainer = document.querySelector('.projects-wrapper .projects-header-container');
             const contentContainer = document.querySelector('.projects-wrapper');
 
-            // Clear existing elements before appending new ones
-            sectionsContainer.innerHTML = '';
-            contentContainer.querySelectorAll('.projects').forEach(section => section.remove());
-
-            console.log(data);
             Object.keys(data).forEach(sectionId => {
                 // Generate the toggle header for each section
                 const header = document.createElement('h2');
