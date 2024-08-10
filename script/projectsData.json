@@ -1,0 +1,97 @@
+{
+  "microservices": [
+    {
+      "name": "cash-register",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1723226283/Portfolio%20Projects/cash-register-js_v4kxxc.png",
+      "description": "A JavaScript Cash Register web application.",
+      "link": "./microservices/cash-register/index.html"
+    },
+    {
+      "name": "countdown-timer",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722453413/Portfolio%20Projects/countdown-timer-js_vbnkps.png",
+      "description": "Countdown Timer is a JavaScript app that allows the user to set, pause, resume, and reset.",
+      "link": "./microservices/countdown-timer/index.html"
+    },
+    {
+      "name": "date-formatter",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722358222/Portfolio%20Projects/date-formatter-js_fhdgr7.png",
+      "description": "A project to learn methods and properties of the JavaScript Date object. It displays the date to the user in 3 different formats.",
+      "link": "./microservices/date-formatter/index.html"
+    },
+    {
+      "name": "days-between-dates-calc",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722453423/Portfolio%20Projects/days-btwn-calc-js_gkiave.png",
+      "description": "Calculate the number of days between two chosen dates. You can choose if you want to include the last day in your calculation.",
+      "link": "./microservices/days-between-dates-calc/index.html"
+    },
+    {
+      "name": "decimal-to-binary-converter",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722356288/Portfolio%20Projects/decimal-binary-converter-js_fgvpmv.png",
+      "description": "A JavaScript app to convert base-10 numbers to binary.",
+      "link": "./microservices/decimal-to-binary-converter/index.html"
+    },
+    {
+      "name": "palindrome-checker",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722453367/Portfolio%20Projects/palindrome-checker-js_vsnumw.png",
+      "description": "A JavaScript project that checks if a user input is a palindrome or not.",
+      "link": "./microservices/palindrome-checker/index.html"
+    },
+    {
+      "name": "phone-number-validator",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722351977/Portfolio%20Projects/phone-number-validator-js_wlaykn.png",
+      "description": "A JavaScript application that checks if an entered number is a valid United States phone number.",
+      "link": "./microservices/phone-number-validator/index.html"
+    },
+    {
+      "name": "roman-numeral-converter",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722351386/Portfolio%20Projects/roman-numeral-converter-js_rhbb0q.png",
+      "description": "A project that converts intergers ranging from 1 to 3999 to Roman numerals.",
+      "link": "./microservices/roman-numeral-converter/index.html"
+    },
+    {
+      "name": "spreadsheet",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722351837/Portfolio%20Projects/spreadsheet-js-full_ai3ehg.png",
+      "description": "A JavaScript spreadsheet application project that parses and evaluates mathematical expressions, implements spreadsheet functions, handles cell references, creates interactive web interfaces, and dynamically updates the page based on user input.",
+      "link": "./microservices/spreadsheet/index.html"
+    },
+    {
+      "name": "statistics-calculator",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722353173/Portfolio%20Projects/statistics-calculator-js-full_zrkamr.png",
+      "description": "A JavaScript statistics calculator that takes a set of numbers and returns the mean, median, mode, variance, and standard deviation.",
+      "link": "./microservices/statistics-calculator/index.html"
+    },
+    {
+      "name": "todo-app",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722357674/Portfolio%20Projects/todo-app-js_a65vhx.png",
+      "description": "A Todo Application JavaScript project to learn how to handle form inputs, manage local storage, perform CRUD (Create, Read, Update, Delete) operations on tasks, implement event listeners, and toggle UI elements.",
+      "link": "./microservices/todo-app/index.html"
+    }
+  ],
+  "games": [
+    {
+      "name": "platformer-game",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1723227174/Portfolio%20Projects/platformer-game-js_x6oirw.png",
+      "description": "A basic JavaScript platformer game. Use the keyboard arrows to move the player and collect yellow checkpoints. Press the spacebar or up to jump.",
+      "link": "./games/platformer-game/index.html"
+    },
+    {
+      "name": "rock-paper-scissors",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722351383/Portfolio%20Projects/rock-paper-scissors-js_f3tjak.png",
+      "description": "Classic Rock Paper Scissors game where the player competes against the computer, each selecting rock, paper, or scissors, with the winner determined based on the classic rules of the game.",
+      "link": "./games/rock-paper-scissors/index.html"
+    },
+    {
+      "name": "rpg-dragon-repeller",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722453378/Portfolio%20Projects/rpg-dragon-slayer-js_dpwzgo.png",
+      "description": "Dragon Repeller is a text-based RPG game built with HTML, CSS, and JavaScript. In this game, you navigate through different locations, fight monsters, upgrade your weapons, and ultimately face the dragon to save the town.",
+      "link": "./games/rpg-dragon-repeller/index.html"
+    },
+    {
+      "name": "snake",
+      "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1722453389/Portfolio%20Projects/snake-js_sak9ls.png",
+      "description": "A classic arcade game where the player controls a growing snake that must navigate a grid to eat food while avoiding collisions with itself or the walls.",
+      "link": "./games/snake/index.html"
+    }
+  ],
+  "apiProjects": []
+}
