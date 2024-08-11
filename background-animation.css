@@ -25,7 +25,7 @@
     width: 25px;
     height: 25px;
     border: 10px solid rgba(255, 255, 255, 0.2);
-    animation: animate 20s linear infinite;
+    animation: animate-background 20s linear infinite;
     bottom: -150px;
     border-radius: 10px;
 }
@@ -74,7 +74,7 @@
     animation-delay: 3.5s;
 }
 
-@keyframes animate {
+@keyframes animate-background {
     0% {
         transform: translateY(0) rotate(0);
         opacity: 1;
