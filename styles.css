@@ -346,6 +346,23 @@ li:hover>ul.sub-menu {
 
     .main-menu {
         justify-self: start;
+        width: 100%;
+    }
+
+    .main-menu>ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    li:hover>ul.sub-menu {
+        transform: translate(135px, -18px);
+    }
+
+    .main-menu-divider {
+        display: none;
     }
 
     .projects {
@@ -362,7 +379,18 @@ li:hover>ul.sub-menu {
         width: 100%;
         height: 100%;
     }
+
+
 }
+
+@media all and (max-width: 500px) {
+    .projects-header-container {
+        flex-direction: column;
+    }
+
+}
+
+
 
 @keyframes fadeIn {
     from {
