@@ -221,7 +221,7 @@ li:hover>ul.sub-menu {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 2rem;
+    gap: 3rem;
     max-width: 800px;
     width: 100%;
     animation: fadeInUp 1s ease-in-out;
