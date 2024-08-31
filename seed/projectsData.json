@@ -97,7 +97,7 @@
     {
       "name": "pokemon-search-app",
       "img": "https://res.cloudinary.com/dwguf4w1t/image/upload/v1725126259/Portfolio%20Projects/pokemon-search-app_jgabiq.png",
-      "description": "![project image](https://res.cloudinary.com/dwguf4w1t/image/upload/v1725126259/Portfolio%20Projects/pokemon-search-app_jgabiq.png)",
+      "description": "A JavaScript project that fetches Pokémon stats from an API and displays them to the page.",
       "link": "./api-projects/pokemon-search-app/index.html"
     }
   ]
