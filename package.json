@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "http-server -c-1 ."
+    "dev": "http-server -c-1 .",
+    "seed": "node script/generateProjects.js"
   },
   "keywords": [],
   "author": "",

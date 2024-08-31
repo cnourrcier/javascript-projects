@@ -4,7 +4,7 @@ const path = require('path');
 const projectDirs = ['microservices', 'games', 'api-projects'];
 const outputFilePath = path.join(__dirname, 'projectsData.json');
 
-let projectsData = { 'microservices': [], 'games': [], 'API Projects': [] };
+let projectsData = { microservices: [], games: [], apiProjects: [] };
 
 projectDirs.forEach((dir) => {
     const projectPath = path.join(__dirname, '..', dir);

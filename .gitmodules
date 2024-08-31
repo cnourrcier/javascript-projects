@@ -43,3 +43,6 @@
 [submodule "games/platformer-game"]
 	path = games/platformer-game
 	url = https://github.com/cnourrcier/platformer-game.git
+[submodule "api-projects/pokemon-search-app"]
+	path = api-projects/pokemon-search-app
+	url = https://github.com/cnourrcier/pokemon-search-app.git
