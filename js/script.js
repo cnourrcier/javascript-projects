@@ -1,6 +1,6 @@
 // ****Load projects onto page start
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('./script/projectsData.json')
+    fetch('./seed/projectsData.json')
         .then(response => response.json())
         .then(data => {
             const sectionsContainer = document.querySelector('.projects-wrapper .projects-header-container');
