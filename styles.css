@@ -54,10 +54,6 @@ header h1 {
     transition: color 0.3s, transform 0.3s;
 }
 
-header h1:hover {
-    transform: scale(1.05);
-}
-
 a {
     text-decoration: none;
     color: var(--primary-color);
@@ -66,7 +62,6 @@ a {
 
 a:hover {
     color: var(--primary-color-hover);
-    transform: scale(1.05);
 }
 
 main p {
@@ -234,12 +229,11 @@ li:hover>ul.sub-menu {
     gap: 0.7rem;
     cursor: pointer;
     color: var(--primary-color);
-    transition: color 0.3s, transform 0.3s;
+    transition: color 0.3s;
 }
 
 .projects-section-header:hover {
     color: var(--primary-color-hover);
-    transform: scale(1.05);
 }
 
 .projects-section-header i {
